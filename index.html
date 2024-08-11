@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Point Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/889/889455.png">
+</head>
+<body>
+
+  <div class="main">
+
+    <!-- Home Side -->
+    <div class="home-side">
+      
+      <h1>HOME</h1>
+
+      <div class="home-board">
+        <span id="home-counter"></span>
+      </div>
+
+      <div class="plus-btn">
+        <button class="plus-one-btn home-btn" onclick="counterPlusOne()">+1</button>
+        <button class="plus-two-btn home-btn" onclick="counterPlusTwo()">+2</button>
+        <button class="plus-three-btn home-btn" onclick="counterPlusThree()">+3</button>
+      </div>
+
+      <button class="reset-btn home-reset-btn" onclick="resetCount()">RESET</button>
+
+    </div>
+
+    <div class="middle"></div>
+    <!-- Guest Side -->
+
+    <div class="guest-side">
+      
+      <h1>GUEST</h1>
+
+      <div class="guest-board">
+        <span id="guest-counter"></span>
+      </div>
+
+      <div class="plus-btn">
+        <button class="plus-one-btn guest-btn" onclick="numberPlusOne()">+1</button>
+        <button class="plus-two-btn guest-btn" onclick="numberPlusTwo()">+2</button>
+        <button class="plus-three-btn guest-btn" onclick="numberPlusThree()">+3</button>
+      </div>
+
+      <button class="reset-btn guest-reset-btn" onclick="resetNumber()">RESET</button>
+
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'CursedTimerUlil';
+  src: url("CursedTimerUlil-Aznm.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b244a;
+}
+
+.home-side, .guest-side{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+}
+
+h1 {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+}
+
+.home-board, .guest-board {
+  width: 300px;
+  height: 250px;
+  background-color: #080001;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#home-counter, #guest-counter {
+  font-family: 'CursedTimerUlil';
+  color: #F94F6D;
+  font-size: 90px;
+  cursor: default;
+}
+
+button {
+  background: none;
+  border: 3px solid #9AABD8;
+  font-family: 'CursedTimerUlil';
+  font-size: 40px;
+  color: #9AABD8;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.plus-btn {
+display: flex;
+gap: 15px;
+margin-bottom: 15px;
+justify-content: center;
+
+}
+
+.reset-btn {
+  padding: 6px 65px;
+}
+
+button:hover {
+  color: #1b244a;
+  background-color: #9AABD8;
+}
+
+@media (max-width: 1100px) {
+
+  .home-side, .guest-side {
+    width: 100%;
+  }
+  .main {
+    display: block;
+  }  
+}
